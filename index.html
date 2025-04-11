@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayed Hashemi</title>
+
+    <!-- فونت Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+    <!-- فایل CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Sayed Hashemi</div>
+
+        <form class="form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="tel" placeholder="Telefonnummer" required>
+            <input type="number" placeholder="Alter" required>
+            <input type="text" placeholder="Augenfarbe">
+            
+            <select required>
+                <option value="">Familienstand wählen</option>
+                <option value="ledig">Ledig</option>
+                <option value="verheiratet">Verheiratet</option>
+            </select>
+
+            <input type="text" placeholder="Hobbys">
+            <button type="submit">Absenden</button>
+        </form>
+
+        <p class="thanks-message" style="display: none;">Vielen Dank für Ihre Informationen!</p>
+    </div>
+
+    <div class="audio-controls">
+        <audio controls autoplay loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- فایل جاوااسکریپت -->
+    <script src="script.js"></script>
+</body>
+</html>
