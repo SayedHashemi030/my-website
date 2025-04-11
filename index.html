@@ -3,50 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benutzerformular</title>
+    <title>Sayed Hashemi</title>
+
+    <!-- فونت Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+    <!-- فایل CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Willkommen! Bitte füllen Sie das Formular aus:</h1>
-        <form id="userForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="title">Sayed Hashemi</div>
 
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+        <form class="form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="tel" placeholder="Telefonnummer" required>
+            <input type="number" placeholder="Alter" required>
+            <input type="text" placeholder="Augenfarbe">
+            
+            <select required>
+                <option value="">Familienstand wählen</option>
+                <option value="ledig">Ledig</option>
+                <option value="verheiratet">Verheiratet</option>
+            </select>
 
-            <label for="age">Alter:</label>
-            <input type="number" id="age" name="age" required>
-
-            <label for="phone">Telefonnummer:</label>
-            <input type="text" id="phone" name="phone" required>
-
-            <label for="hobbies">Hobbys:</label>
-            <input type="text" id="hobbies" name="hobbies" required>
-
-            <label for="eyeColor">Augenfarbe:</label>
-            <input type="text" id="eyeColor" name="eyeColor" required>
-
-            <label for="status">Familienstand:</label>
-            <input type="text" id="status" name="status" required>
-
+            <input type="text" placeholder="Hobbys">
             <button type="submit">Absenden</button>
         </form>
 
-        <div id="result" style="display: none;">
-            <h2 id="greeting"></h2>
-            <h3>Ihre Informationen:</h3>
-            <p id="resultName"></p>
-            <p id="resultEmail"></p>
-            <p id="resultAge"></p>
-            <p id="resultPhone"></p>
-            <p id="resultHobbies"></p>
-            <p id="resultEyeColor"></p>
-            <p id="resultStatus"></p>
-        </div>
+        <p class="thanks-message" style="display: none;">Vielen Dank für Ihre Informationen!</p>
     </div>
 
+    <div class="audio-controls">
+        <audio controls autoplay loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- فایل جاوااسکریپت -->
     <script src="script.js"></script>
 </body>
 </html>
